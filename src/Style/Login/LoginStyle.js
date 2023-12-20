@@ -147,7 +147,7 @@ export const buttonBox={
     fontWeight: 700,
     lineHeight: "140%", /* 58.8px */
     letterSpacing: "0.42px",
-    marginTop:1,
+    marginTop:6,
     height: "40%",
 
   }

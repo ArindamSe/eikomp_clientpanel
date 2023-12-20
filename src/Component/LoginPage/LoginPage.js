@@ -12,7 +12,7 @@ import {
 } from "@mui/material";
 
 import LogoImage from "../../Assets/Logo/logo.png";
-import IsoImage from "../../Assets/LoginPage/iso.png";
+import Image from "../../Assets/LoginPage/female.png";
 import VisibilityIcon from "@mui/icons-material/Visibility";
 import VisibilityOffIcon from "@mui/icons-material/VisibilityOff";
 import {
@@ -77,8 +77,8 @@ const complianceTitle ="Click to comply - revolutionizing product compliance wit
                 outline: "none",
               }}
               id="outlined-adornment-email"
-              type="email"
-              label="Email"
+              type="text"
+              label="Email or Username"
               variant="outlined"
             />
           </Box>
@@ -161,11 +161,20 @@ const complianceTitle ="Click to comply - revolutionizing product compliance wit
         <Box sx={loginBoxSecond} margin={"24px,24px,24px,0px"}>
           <Box margin={2} bgcolor={"blue"} sx={loginBoxSecondBg}>
             <Box sx={BlurBox}>
-              
-              <Box marginTop={3} style={{ height: "60%" }}>
+              <Typography
+              align="center"
+              marginTop={8}
+                width={"80%"}
+                sx={secondBoxText}
+                fontSize={"2rem"}
+                style={{ height: "40%" }}
+              >
+                {complianceTitle}
+              </Typography>
+              <Box marginTop={1} style={{ height: "60%" }}>
                 <img
                   align="left"
-                  src={IsoImage}
+                  src={Image}
                   alt="Logo Image"
                   style={{
                     width: "100%",
@@ -175,15 +184,6 @@ const complianceTitle ="Click to comply - revolutionizing product compliance wit
                   }}
                 />
               </Box>
-              <Typography
-                width={"80%"}
-                sx={secondBoxText}
-                fontSize={"2rem"}
-                style={{ height: "40%" }}
-                align="center"
-              >
-                {complianceTitle}
-              </Typography>
             </Box>
           </Box>
         </Box>
