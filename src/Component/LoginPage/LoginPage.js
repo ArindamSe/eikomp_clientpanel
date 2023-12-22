@@ -47,11 +47,15 @@ function LoginPage() {
   const handleMouseDownPassword = (event) => {
     event.preventDefault();
   };
-const complianceTitle ="Click to comply - revolutionizing product compliance with a single Tab"
+  const complianceTitle =
+    "Click to comply - revolutionizing product compliance with a single Tab";
+
+  const isMobile = window.innerWidth <= 430;
+  const isTab = window.innerWidth <= 920;
+
   return (
     <>
-
-    {/* First  half screen with  login and sign up */}
+      {/* First  half screen with  login and sign up */}
       <Box bgcolor={"#F0F2F5"} sx={loginLandingPage}>
         <Box sx={loginBoxFirst}>
           <Typography align={"center"}>
@@ -72,7 +76,7 @@ const complianceTitle ="Click to comply - revolutionizing product compliance wit
           <Box sx={textfieldInput}>
             <TextField
               style={{
-                width: "400px",
+                width: isTab ? (isMobile ? "90%" : "60%") : "400px",
                 background: "#FEFEFE",
                 outline: "none",
               }}
@@ -85,7 +89,7 @@ const complianceTitle ="Click to comply - revolutionizing product compliance wit
           <Box sx={textfieldInput}>
             <TextField
               style={{
-                width: "400px",
+                width: isTab ? (isMobile ? "90%" : "60%") : "400px",
                 background: "#FEFEFE",
                 outline: "none",
                 borderRadius: "8px",
@@ -116,7 +120,7 @@ const complianceTitle ="Click to comply - revolutionizing product compliance wit
             />
           </Box>
           <Box align={"center"}>
-            <Box width={"400px"} sx={rememberMeBox}>
+          <Box sx={{ ...rememberMeBox, width: isTab ? (isMobile ? "90%" : "60%") : "400px" }}>
               <Box sx={remamebeToggleBox}>
                 <Typography marginTop={-1} width={"50px"}>
                   {" "}
@@ -136,8 +140,11 @@ const complianceTitle ="Click to comply - revolutionizing product compliance wit
               </Box>
             </Box>
             <Box align={"center"} marginTop={1}>
-              <Button variant="contained" sx={buttonBox}>
-                Log In
+              <Button
+                variant="contained"
+                sx={{ ...buttonBox,    width: isTab ? (isMobile ? "90%" : "60%") : "400px", }}
+              >
+                LogIn
               </Button>
             </Box>
             <Box marginTop={3}>
@@ -155,15 +162,14 @@ const complianceTitle ="Click to comply - revolutionizing product compliance wit
           </Box>
         </Box>
 
-
-{/* second half screen with  vector image and title */}
+        {/* second half screen with  vector image and title */}
 
         <Box sx={loginBoxSecond} margin={"24px,24px,24px,0px"}>
           <Box margin={2} bgcolor={"blue"} sx={loginBoxSecondBg}>
             <Box sx={BlurBox}>
               <Typography
-              align="center"
-              marginTop={8}
+                align="center"
+                marginTop={8}
                 width={"80%"}
                 sx={secondBoxText}
                 fontSize={"2rem"}
@@ -171,7 +177,7 @@ const complianceTitle ="Click to comply - revolutionizing product compliance wit
               >
                 {complianceTitle}
               </Typography>
-              <Box marginTop={1} style={{ height: "60%" }}>
+              <Box marginTop={1} style={{ height: "60%", width: isTab ?"55%":"",height: isTab ?"80%":"60%" }}>
                 <img
                   align="left"
                   src={Image}
