@@ -76,7 +76,7 @@ function LoginPage() {
           <Box sx={textfieldInput}>
             <TextField
               style={{
-                width: isTab ? (isMobile ? "90%" : "60%") : "400px",
+                width: isTab ? (isMobile ? "80%" : "60%") : "400px",
                 background: "#FEFEFE",
                 outline: "none",
               }}
@@ -89,7 +89,7 @@ function LoginPage() {
           <Box sx={textfieldInput}>
             <TextField
               style={{
-                width: isTab ? (isMobile ? "90%" : "60%") : "400px",
+                width: isTab ? (isMobile ? "80%" : "60%") : "400px",
                 background: "#FEFEFE",
                 outline: "none",
                 borderRadius: "8px",
@@ -120,7 +120,7 @@ function LoginPage() {
             />
           </Box>
           <Box align={"center"}>
-          <Box sx={{ ...rememberMeBox, width: isTab ? (isMobile ? "90%" : "60%") : "400px" }}>
+          <Box sx={{ ...rememberMeBox, width: isTab ? (isMobile ? "80%" : "60%") : "400px" }}>
               <Box sx={remamebeToggleBox}>
                 <Typography marginTop={-1} width={"50px"}>
                   {" "}
@@ -142,7 +142,7 @@ function LoginPage() {
             <Box align={"center"} marginTop={1}>
               <Button
                 variant="contained"
-                sx={{ ...buttonBox,    width: isTab ? (isMobile ? "90%" : "60%") : "400px", }}
+                sx={{ ...buttonBox,    width: isTab ? (isMobile ? "80%" : "60%") : "400px", }}
               >
                 LogIn
               </Button>
