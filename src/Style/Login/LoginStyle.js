@@ -169,7 +169,7 @@ letterSpacing: "0.3px"
 }
 export const buttonBox={
     display: "flex",
-    width: "400px",
+  
     height: "50px",
     padding: "12px 173px",
     justifyContent: "center",
