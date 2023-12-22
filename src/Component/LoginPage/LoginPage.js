@@ -177,7 +177,7 @@ function LoginPage() {
               >
                 {complianceTitle}
               </Typography>
-              <Box marginTop={1} style={{ height: "60%", width: isTab ?"55%":"",height: isTab ?"80%":"60%" }}>
+              <Box marginTop={1} style={{ width: isTab ?"55%":"",height: isTab ?"80%":"60%" }}>
                 <img
                   align="left"
                   src={Image}
