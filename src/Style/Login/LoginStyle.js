@@ -233,7 +233,7 @@ export const buttonBox={
     '@media (max-width: 920px)': {
         fonSize: "1.2rem",
        textAlign:"center",
-       width:"45%"
+      
       
        },
   };
