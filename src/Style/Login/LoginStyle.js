@@ -15,17 +15,17 @@ export const loginBoxFirst={
  ...contentCenter,
  textAlign:"center",
  '@media (max-width: 920px)': {
-        
+        marginTop:3,
     width:"100%",
-    height:"50vh",
+    height:"100%",
    },
   
    '@media (max-width: 820px)': {
         
     width:"100%",
-    height:"50vh",
+    height:"100%",
    },
- '@media (max-width: 430px)': {
+ '@media (max-width: 530px)': {
         
     width:"100%",
     height:"100vh",
@@ -45,7 +45,7 @@ export const loginBoxSecond={
         height:"50vh",
        },
     
-    '@media (max-width: 430px)': {
+    '@media (max-width: 530px)': {
         
         display:"none"
        },
@@ -169,7 +169,7 @@ letterSpacing: "0.3px"
 }
 export const buttonBox={
     display: "flex",
-  
+    width: "400px",
     height: "50px",
     padding: "12px 173px",
     justifyContent: "center",
