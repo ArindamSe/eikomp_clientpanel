@@ -49,8 +49,8 @@ function LoginPage() {
   };
   const complianceTitle =
     "Click to comply - revolutionizing product compliance with a single Tab";
-
-  const isMobile = window.innerWidth <= 430;
+const smallMobile =window.innerWidth <= 430;
+  const isMobile = window.innerWidth <= 530;
   const isTab = window.innerWidth <= 920;
 
   return (
@@ -76,7 +76,8 @@ function LoginPage() {
           <Box sx={textfieldInput}>
             <TextField
               style={{
-                width: isTab ? (isMobile ? "80%" : "60%") : "400px",
+                width: isTab ? (isMobile ? (smallMobile ? "70%" : "80%") : "60%") : "400px",
+              
                 background: "#FEFEFE",
                 outline: "none",
               }}
@@ -89,7 +90,7 @@ function LoginPage() {
           <Box sx={textfieldInput}>
             <TextField
               style={{
-                width: isTab ? (isMobile ? "80%" : "60%") : "400px",
+                width: isTab ? (isMobile ? (smallMobile ? "70%" : "80%") : "60%") : "400px",
                 background: "#FEFEFE",
                 outline: "none",
                 borderRadius: "8px",
@@ -120,7 +121,7 @@ function LoginPage() {
             />
           </Box>
           <Box align={"center"}>
-          <Box sx={{ ...rememberMeBox, width: isTab ? (isMobile ? "80%" : "60%") : "400px" }}>
+          <Box sx={{ ...rememberMeBox, width: isTab ? (isMobile ? (smallMobile ? "70%" : "80%") : "60%") : "400px" }}>
               <Box sx={remamebeToggleBox}>
                 <Typography marginTop={-1} width={"50px"}>
                   {" "}
@@ -139,7 +140,7 @@ function LoginPage() {
                 <Typography sx={recoverText}>Recover Password</Typography>
               </Box>
             </Box>
-            <Box align={"center"} marginTop={1}>
+            <Box align={"center"} marginTop={1} sx={{ width: "100%" }}> 
               <Button
                 variant="contained"
                 sx={{ ...buttonBox,    width: isTab ? (isMobile ? "80%" : "60%") : "400px", }}
@@ -177,7 +178,7 @@ function LoginPage() {
               >
                 {complianceTitle}
               </Typography>
-              <Box marginTop={1} style={{ width: isTab ?"55%":"",height: isTab ?"80%":"60%" }}>
+              <Box marginTop={1} style={{ width: isTab ?"65%":"",height: isTab ?"80%":"60%" }}>
                 <img
                   align="left"
                   src={Image}

@@ -42,7 +42,7 @@ export const loginBoxSecond={
     '@media (max-width: 920px)': {
         
         width:"100%",
-        height:"50vh",
+        height:"auto",
        },
     
     '@media (max-width: 530px)': {
@@ -90,7 +90,8 @@ export const  textfieldInput ={
    
 textAlign:"center",
 marginTop:1.5,
-marginBottom:1.5
+marginBottom:1.5,
+
 }
 export const rememberMeBox={
     display: "flex", // Corrected from "wrap"
@@ -121,11 +122,7 @@ export const remamebeToggleBox={
 
     ...flexRow,
     marginLeft:-4,
-    '@media (max-width: 430px)': {
-        
-     
-        marginLeft:0,
-       },
+  
 }
 
 export const rememberText={
@@ -214,7 +211,7 @@ export const buttonBox={
     justifyContent: "center",
     alignItems: "center",
     '@media (max-width: 920px)': {
-        
+        margin:2,
         flexDirection: "row",
       
        },
@@ -233,7 +230,7 @@ export const buttonBox={
     '@media (max-width: 920px)': {
         fonSize: "1.2rem",
        textAlign:"center",
-      
+       width:"45%"
       
        },
   };
