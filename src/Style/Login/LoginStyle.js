@@ -170,7 +170,7 @@ letterSpacing: "0.3px"
 export const buttonBox={
     display: "flex",
     
-    height: "50px",
+  
     padding: "12px 173px",
     justifyContent: "center",
     alignItems: "center",
@@ -182,7 +182,18 @@ export const buttonBox={
     "&:hover": {
       background: "#55b700", // Change to the desired green color on hover
     },
-   
+    '@media (max-width: 420px)': {
+        padding: "12px 160px",
+        
+      },
+      '@media (max-width: 400px)': {
+        padding: "12px 150px",
+        
+      },
+      '@media (max-width: 370px)': {
+        padding: "12px 140px",
+        
+      },
   
   }
   export const loginBoxSecondBg={

@@ -75,7 +75,7 @@ function LoginPage() {
           <Typography sx={loginAccountText}>Login into your account</Typography>
 
           <Grid container>
-          <Grid align="center" item xs={12} sm={12} md={12} lg={12} marginTop={2}>
+          <Grid width={"80%"} margin={2} align="center" item xs={12} sm={12} md={12} lg={12} marginTop={1}>
             <TextField
             align="center"
               style={{
@@ -94,7 +94,7 @@ function LoginPage() {
               variant="outlined"
             />
           </Grid>
-          <Grid item xs={12} sm={12} md={12} lg={12} marginTop={2}>
+          <Grid width={"80%"}  margin={2} item xs={12} sm={12} md={12} lg={12} marginTop={1}>
             <TextField
               style={{
                 marginTop: 5,
@@ -128,7 +128,7 @@ function LoginPage() {
               }}
             />
           </Grid>
-          <Grid sx={{...rememberMeBox,}} align="center" item xs={12} sm={12} md={12} marginTop={2}>
+          <Grid width={"80%"}  margin={2} sx={{...rememberMeBox,}} align="center" item xs={12} sm={12} md={12} marginTop={1}>
           <Box sx={remamebeToggleBox}>
                 <Typography marginTop={-1} width={"50px"}>
                   {" "}
@@ -146,7 +146,7 @@ function LoginPage() {
               </Box>
               </Box>
               </Grid>
-          <Grid align="center" item xs={12} sm={12} md={12} marginTop={2}>
+          <Grid align="center"   item xs={12} sm={12} md={12} >
             <Button
               variant="contained"
               sx={{ ...buttonBox, width: 'auto', maxWidth: '400px' }}
@@ -154,7 +154,7 @@ function LoginPage() {
               SignIn
             </Button>
           </Grid>
-          <Grid item xs={12} sm={12} md={12} lg={12} marginTop={2}>
+          <Grid width={"80%"}  margin={2} item xs={12} sm={12} md={12} lg={12} marginTop={1}>
           <Typography>
                 <Typography component="span" sx={accountText}>
                   {" "}
