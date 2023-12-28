@@ -116,7 +116,7 @@ width:"60%",
 
 export const buttonBox={
     display: "flex",
-    width: "90%",
+    width: "100%",
     height: "50px",
     padding: "12px 173px",
     justifyContent: "center",
