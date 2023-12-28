@@ -89,7 +89,7 @@ function LoginPage() {
                 },
               }}
               id="outlined-adornment-email"
-              type="number"
+              type="text"
               label="Email or Username"
               variant="outlined"
             />
@@ -160,7 +160,7 @@ function LoginPage() {
                   {" "}
                   Don’t have an account?{" "}
                 </Typography>{" "}
-                <Link to={"/signup"}>
+                <Link to={"/signup"} style={{ textDecoration: 'none', color: 'inherit' }}>
                 <Typography component="span" sx={signupText}>
                   Sign up!
                 </Typography>

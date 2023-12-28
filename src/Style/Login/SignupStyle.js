@@ -31,7 +31,8 @@ export const mainBox2={
        '@media (max-width: 990px)': {
         
         width:"100%",
-        paddingTop:7
+        paddingTop:7,
+        paddingBottom:7
        },
     
 }
@@ -118,7 +119,7 @@ export const buttonBox={
     display: "flex",
     width: "100%",
     height: "50px",
-   
+    padding: "12px 173px",
     justifyContent: "center",
     alignItems: "center",
     gap: "10px",
@@ -129,9 +130,18 @@ export const buttonBox={
     "&:hover": {
       background: "#55b700", // Change to the desired green color on hover
     },
-    '@media (max-width: 570px)': {
-        padding: "0px",
-       },
+    '@media (max-width: 420px)': {
+        padding: "12px 160px",
+        
+      },
+      '@media (max-width: 400px)': {
+        padding: "12px 150px",
+        
+      },
+      '@media (max-width: 370px)': {
+        padding: "12px 140px",
+        
+      },
    
   
   }

@@ -326,9 +326,9 @@ function SignupPage() {
                   {" "}
                   Alrady have an account?{" "}
                 </Typography>{" "}
-                <Link to={"/"}>
+                <Link to={"/"} style={{ textDecoration: 'none', color: 'inherit' }}>
                 <Typography component="span" sx={signupTexts}>
-                  Sign in!
+                  Log in!
                 </Typography>
                 </Link>
               </Typography>
