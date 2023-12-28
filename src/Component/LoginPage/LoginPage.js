@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom"
 import {
   Box,
   Typography,
@@ -155,9 +156,11 @@ const smallMobile =window.innerWidth <= 430;
                   {" "}
                   Don’t have an account?{" "}
                 </Typography>{" "}
+                <Link to={"/Signup"}>
                 <Typography component="span" sx={signupText}>
                   Sign up!
                 </Typography>
+                </Link>
               </Typography>{" "}
             </Box>
           </Box>

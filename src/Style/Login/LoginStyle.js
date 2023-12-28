@@ -1,5 +1,6 @@
 import { flexRow ,flexColumn,contentCenter } from "../../GlobalVariable/GlobalVariable"
 import Image1 from "../../Assets/LoginPage/loginBackground.png"
+
 export  const  loginLandingPage={
     ...flexRow,
    backgroundColor:"#F0F2F5",
