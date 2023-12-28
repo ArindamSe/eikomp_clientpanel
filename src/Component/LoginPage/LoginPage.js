@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom"
 import {
   Box,
   Typography,
@@ -10,6 +9,7 @@ import {
   IconButton,
   Switch,
   Button,
+  Grid,
 } from "@mui/material";
 
 import LogoImage from "../../Assets/Logo/logo.png";
@@ -50,8 +50,8 @@ function LoginPage() {
   };
   const complianceTitle =
     "Click to comply - revolutionizing product compliance with a single Tab";
-const smallMobile =window.innerWidth <= 430;
-  const isMobile = window.innerWidth <= 530;
+
+  const isMobile = window.innerWidth <= 430;
   const isTab = window.innerWidth <= 920;
 
   return (
@@ -74,32 +74,43 @@ const smallMobile =window.innerWidth <= 430;
           <Typography sx={welcomeText}>Welcome Back</Typography>
           <Typography sx={loginAccountText}>Login into your account</Typography>
 
-          <Box sx={textfieldInput}>
+          <Grid container>
+          <Grid align="center" item xs={12} sm={12} md={12} lg={12} marginTop={2}>
             <TextField
+            align="center"
               style={{
-                width: isTab ? (isMobile ? (smallMobile ? "70%" : "80%") : "60%") : "400px",
-              
+                marginTop: 5,
                 background: "#FEFEFE",
+                width: "100%", // Set width to 100%
+                maxWidth: "400px", // Set the maximum width as needed
                 outline: "none",
+                '@media (max-width: 530px)': {
+                  width: '400px', // Adjust width for screens 530px or less
+                },
               }}
               id="outlined-adornment-email"
-              type="text"
-              label="Email or Username"
+              type="number"
+              label="Phone Number"
               variant="outlined"
             />
-          </Box>
-          <Box sx={textfieldInput}>
+          </Grid>
+          <Grid item xs={12} sm={12} md={12} lg={12} marginTop={2}>
             <TextField
               style={{
-                width: isTab ? (isMobile ? (smallMobile ? "70%" : "80%") : "60%") : "400px",
+                marginTop: 5,
+                width: "100%", // Set width to 100%
+                maxWidth: "400px", // Set the maximum width as needed
                 background: "#FEFEFE",
                 outline: "none",
                 borderRadius: "8px",
                 color: "#5A5A5A",
+                '@media (max-width: 530px)': {
+                  width: '400px', // Adjust width for screens 530px or less
+                },
               }}
               id="outlined-adornment-password"
               type={showPassword ? "text" : "password"}
-              label="Password"
+              label="Confirm Password"
               variant="outlined"
               InputProps={{
                 endAdornment: (
@@ -110,20 +121,15 @@ const smallMobile =window.innerWidth <= 430;
                       onMouseDown={handleMouseDownPassword}
                       edge="end"
                     >
-                      {showPassword ? (
-                        <VisibilityOffIcon />
-                      ) : (
-                        <VisibilityIcon />
-                      )}
+                      {showPassword ? <VisibilityOffIcon /> : <VisibilityIcon />}
                     </IconButton>
                   </InputAdornment>
                 ),
               }}
             />
-          </Box>
-          <Box align={"center"}>
-          <Box sx={{ ...rememberMeBox, width: isTab ? (isMobile ? (smallMobile ? "70%" : "80%") : "60%") : "400px" }}>
-              <Box sx={remamebeToggleBox}>
+          </Grid>
+          <Grid sx={{...rememberMeBox,}} align="center" item xs={12} sm={12} md={12} marginTop={2}>
+          <Box sx={remamebeToggleBox}>
                 <Typography marginTop={-1} width={"50px"}>
                   {" "}
                   <Switch
@@ -135,35 +141,37 @@ const smallMobile =window.innerWidth <= 430;
                 <Typography sx={rememberText} marginRight={10} marginLeft={1}>
                   Remember me
                 </Typography>
-              </Box>
-
-              <Box>
+                <Box>
                 <Typography sx={recoverText}>Recover Password</Typography>
               </Box>
-            </Box>
-            <Box align={"center"} marginTop={1} sx={{ width: "100%" }}> 
-              <Button
-                variant="contained"
-                sx={{ ...buttonBox,    width: isTab ? (isMobile ? "80%" : "60%") : "400px", }}
-              >
-                LogIn
-              </Button>
-            </Box>
-            <Box marginTop={3}>
-              {" "}
-              <Typography>
+              </Box>
+              </Grid>
+          <Grid align="center" item xs={12} sm={12} md={12} marginTop={2}>
+            <Button
+              variant="contained"
+              sx={{ ...buttonBox, width: 'auto', maxWidth: '400px' }}
+            >
+              SignIn
+            </Button>
+          </Grid>
+          <Grid item xs={12} sm={12} md={12} lg={12} marginTop={2}>
+          <Typography>
                 <Typography component="span" sx={accountText}>
                   {" "}
                   Don’t have an account?{" "}
                 </Typography>{" "}
-                <Link to={"/Signup"}>
                 <Typography component="span" sx={signupText}>
                   Sign up!
                 </Typography>
-                </Link>
-              </Typography>{" "}
-            </Box>
-          </Box>
+              </Typography>
+          </Grid>
+        </Grid>
+        
+
+
+        
+         
+          
         </Box>
 
         {/* second half screen with  vector image and title */}
@@ -181,7 +189,7 @@ const smallMobile =window.innerWidth <= 430;
               >
                 {complianceTitle}
               </Typography>
-              <Box marginTop={1} style={{ width: isTab ?"65%":"",height: isTab ?"80%":"60%" }}>
+              <Box marginTop={1} style={{ width: isTab ?"55%":"",height: isTab ?"80%":"60%" }}>
                 <img
                   align="left"
                   src={Image}

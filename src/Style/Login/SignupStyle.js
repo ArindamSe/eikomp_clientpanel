@@ -118,7 +118,7 @@ export const buttonBox={
     display: "flex",
     width: "100%",
     height: "50px",
-    padding: "12px 173px",
+   
     justifyContent: "center",
     alignItems: "center",
     gap: "10px",

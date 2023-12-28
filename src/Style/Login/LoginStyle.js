@@ -1,6 +1,5 @@
 import { flexRow ,flexColumn,contentCenter } from "../../GlobalVariable/GlobalVariable"
 import Image1 from "../../Assets/LoginPage/loginBackground.png"
-
 export  const  loginLandingPage={
     ...flexRow,
    backgroundColor:"#F0F2F5",
@@ -16,15 +15,15 @@ export const loginBoxFirst={
  ...contentCenter,
  textAlign:"center",
  '@media (max-width: 920px)': {
-        marginTop:3,
+        
     width:"100%",
-    height:"100%",
+    height:"auto",
    },
   
    '@media (max-width: 820px)': {
         
     width:"100%",
-    height:"100%",
+    height:"auto",
    },
  '@media (max-width: 530px)': {
         
@@ -91,8 +90,7 @@ export const  textfieldInput ={
    
 textAlign:"center",
 marginTop:1.5,
-marginBottom:1.5,
-
+marginBottom:1.5
 }
 export const rememberMeBox={
     display: "flex", // Corrected from "wrap"
@@ -123,7 +121,11 @@ export const remamebeToggleBox={
 
     ...flexRow,
     marginLeft:-4,
-  
+    '@media (max-width: 430px)': {
+        
+     
+        marginLeft:0,
+       },
 }
 
 export const rememberText={
@@ -167,7 +169,7 @@ letterSpacing: "0.3px"
 }
 export const buttonBox={
     display: "flex",
-    width: "400px",
+    
     height: "50px",
     padding: "12px 173px",
     justifyContent: "center",
@@ -212,9 +214,9 @@ export const buttonBox={
     justifyContent: "center",
     alignItems: "center",
     '@media (max-width: 920px)': {
-        margin:2,
+        
         flexDirection: "row",
-      
+      margin:2
        },
   };
   
