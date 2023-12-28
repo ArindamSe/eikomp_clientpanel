@@ -18,7 +18,7 @@ import {
 } from "../../Style/Login/SignupStyle";
 import VisibilityIcon from "@mui/icons-material/Visibility";
 import VisibilityOffIcon from "@mui/icons-material/VisibilityOff";
-
+import { Link } from "react-router-dom";
 import LogoImage from "../../Assets/Logo/logo.png";
 function SignupPage() {
     const currencies = [
@@ -326,9 +326,11 @@ function SignupPage() {
                   {" "}
                   Alrady have an account?{" "}
                 </Typography>{" "}
+                <Link to={"/"}>
                 <Typography component="span" sx={signupTexts}>
                   Sign in!
                 </Typography>
+                </Link>
               </Typography>
         </Box>
       </Box>

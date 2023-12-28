@@ -90,7 +90,7 @@ function LoginPage() {
               }}
               id="outlined-adornment-email"
               type="number"
-              label="Phone Number"
+              label="Email or Username"
               variant="outlined"
             />
           </Grid>
