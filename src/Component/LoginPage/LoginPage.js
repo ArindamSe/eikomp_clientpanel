@@ -11,7 +11,7 @@ import {
   Button,
   Grid,
 } from "@mui/material";
-
+import { Link } from "react-router-dom";
 import LogoImage from "../../Assets/Logo/logo.png";
 import Image from "../../Assets/LoginPage/female.png";
 import VisibilityIcon from "@mui/icons-material/Visibility";
@@ -160,9 +160,11 @@ function LoginPage() {
                   {" "}
                   Don’t have an account?{" "}
                 </Typography>{" "}
+                <Link to={"/signup"}>
                 <Typography component="span" sx={signupText}>
                   Sign up!
                 </Typography>
+                </Link>
               </Typography>
           </Grid>
         </Grid>
