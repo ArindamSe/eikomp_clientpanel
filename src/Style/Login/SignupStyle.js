@@ -27,6 +27,12 @@ export const mainBox2={
         
         width:"100%"
        },
+
+       '@media (max-width: 990px)': {
+        
+        width:"100%",
+        paddingTop:7
+       },
     
 }
 
