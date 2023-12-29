@@ -17,14 +17,10 @@ export const loginBoxFirst={
  '@media (max-width: 920px)': {
         
     width:"100%",
-    height:"50vh",
+    height:"100vh",
    },
   
-   '@media (max-width: 820px)': {
-        
-    width:"100%",
-    height:"auto",
-   },
+
  '@media (max-width: 530px)': {
         
     width:"100%",
