@@ -34,7 +34,7 @@ export const loginBoxFirst={
 }
 export const loginBoxSecond={
     width:"50%",
-    height:"100vh",
+    height:"70vh",
     '@media (max-width: 920px)': {
         
         width:"100%",
